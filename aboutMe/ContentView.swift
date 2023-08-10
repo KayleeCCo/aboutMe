@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        
         ZStack {
             
             
@@ -37,15 +36,14 @@ struct ContentView: View {
                         .lineLimit(nil)
                   
                     
-                    Button( action:
-                            {showBio.toggle()})
-                    {
-                        Text("Click here for some facts about me") {
-                         
-                    }
+                    Button(Text("Click here for some facts about me")
+                
+                       
+                           
+                    
                         
                      
-                    }
+                    
                     .padding(.all)
                     .buttonBorderShape(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=shape: ButtonBorderShape@*/.roundedRectangle/*@END_MENU_TOKEN@*/)
                     .foregroundColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
@@ -53,11 +51,9 @@ struct ContentView: View {
                     
                 
                     
-                }
+                
                     
-                if showBio {
-                    Text("I am")
-                }
+               
             
             
                
@@ -67,7 +63,7 @@ struct ContentView: View {
         .accentColor(/*@START_MENU_TOKEN@*/Color(hue: 0.609, saturation: 0.375, brightness: 0.946)/*@END_MENU_TOKEN@*/)
         .foregroundColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
